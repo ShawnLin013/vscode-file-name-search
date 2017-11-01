@@ -16,20 +16,20 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.searchFileName"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.searchFileName",
+                "title": "Search File Name"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
-                    "command": "extension.sayHello",
+                    "command": "extension.searchFileName",
                     "group": "navigation"
                 }
             ]
