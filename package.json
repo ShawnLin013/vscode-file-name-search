@@ -1,9 +1,10 @@
 {
     "name": "file-name-search",
     "displayName": "File Name Search",
-    "description": "Quickly search over all files in the currently-opened folder.",
+    "description": "Quickly search file name over all files.",
     "version": "0.0.1",
     "publisher": "Shawn",
+    "icon": "file-name-search-icon.png",
     "license": "MIT",
     "repository": {
       "type": "git",

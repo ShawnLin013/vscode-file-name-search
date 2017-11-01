@@ -1,6 +1,6 @@
-# file-name-search 
+# File Name Search
 
-Quickly search over all files in the currently-opened folder.
+Quickly search file name over all files.
 
 ## Usage
 
