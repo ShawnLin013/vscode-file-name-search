@@ -4,6 +4,11 @@
     "description": "Quickly search over all files in the currently-opened folder.",
     "version": "0.0.1",
     "publisher": "Shawn",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ShawnLin013/vscode-file-name-search.git"
+    },
     "engines": {
         "vscode": "^1.17.0"
     },
@@ -33,6 +38,9 @@
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "copy-paste": "^1.2.0"
     },
     "devDependencies": {
         "typescript": "^2.5.2",
