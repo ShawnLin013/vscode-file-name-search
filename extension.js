@@ -1,11 +1,11 @@
 const vscode = require('vscode');
 const ncp = require("copy-paste");
+const path = require("path");
 
 function activate(context) {
     let disposable = vscode.commands.registerCommand('extension.searchFileName', function (fileUri) {
         if (fileUri != undefined) {
-            var path = fileUri.fsPath.split("\"")[0];
-            var name = path.split("\\")[path.split("\\").length - 1];
+            var name = path.basename(fileUri.fsPath);
             ncp.copy(name, function() {
                 vscode.commands.executeCommand('workbench.action.findInFiles');
                 vscode.commands.executeCommand('editor.action.clipboardPasteAction');
