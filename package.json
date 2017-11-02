@@ -2,7 +2,7 @@
     "name": "file-name-search",
     "displayName": "File Name Search",
     "description": "Quickly search file name over all files.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Shawn",
     "icon": "file-name-search-icon.png",
     "license": "MIT",
@@ -41,7 +41,7 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "dependencies": {
-        "copy-paste": "^1.2.0"
+        "copy-paste": "^1.3.0"
     },
     "devDependencies": {
         "typescript": "^2.5.2",
