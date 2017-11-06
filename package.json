@@ -4,7 +4,7 @@
     "description": "Quickly search file name over all files.",
     "version": "0.0.2",
     "publisher": "Shawn",
-    "icon": "file-name-search-icon.png",
+    "icon": "images/logo.png",
     "license": "MIT",
     "repository": {
       "type": "git",
