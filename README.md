@@ -13,6 +13,8 @@ Quickly search file name over all files.
 2. Click `Search File Name`
 3. Done
 
+![](images/preview.gif)
+
 ## License
 
 The source code is licensed under the [MIT](License) license.
