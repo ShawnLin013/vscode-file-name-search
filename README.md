@@ -13,7 +13,7 @@ Quickly search file name over all files.
 2. Click `Search File Name`
 3. Done
 
-![](images/preview.gif)
+![](https://raw.githubusercontent.com/ShawnLin013/vscode-file-name-search/master/images/preview.gif)
 
 ## License
 
