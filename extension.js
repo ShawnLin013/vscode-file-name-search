@@ -8,10 +8,12 @@ function activate(context) {
             var name = path.basename(fileUri.fsPath);
             ncp.copy(name, function() {
                 vscode.commands.executeCommand('workbench.action.findInFiles');
+                vscode.commands.executeCommand('workbench.action.search.toggleQueryDetails');
+                vscode.commands.executeCommand('workbench.action.search.toggleQueryDetails');
                 vscode.commands.executeCommand('editor.action.clipboardPasteAction');
                 vscode.commands.executeCommand('toggleSearchWholeWord');
                 vscode.commands.executeCommand('toggleSearchWholeWord');
-            })
+            });
         }
     });
     context.subscriptions.push(disposable); 
