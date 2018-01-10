@@ -2,7 +2,7 @@
     "name": "file-name-search",
     "displayName": "File Name Search",
     "description": "Quickly search file name over all files.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "Shawn",
     "icon": "images/logo.png",
     "license": "MIT",
