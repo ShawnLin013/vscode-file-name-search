@@ -11,27 +11,48 @@
       "url": "https://github.com/ShawnLin013/vscode-file-name-search.git"
     },
     "engines": {
-        "vscode": "^1.17.0"
+        "vscode": "^1.34.0"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.searchFileName"
+        "onCommand:extension.searchFileName",
+        "onCommand:extension.searchFileName.matchCase",
+        "onCommand:extension.searchFileName.matchWholeWord",
+        "onCommand:extension.searchFileName.matchCaseAndWholeWord"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
                 "command": "extension.searchFileName",
-                "title": "Search File Name"
+                "title": "%extension.searchFileName%"
+            }, {
+                "command": "extension.searchFileName.matchCase",
+                "title": "%extension.searchFileName.matchCase%"
+            }, {
+                "command": "extension.searchFileName.matchWholeWord",
+                "title": "%extension.searchFileName.matchWholeWord%"
+            }, {
+                "command": "extension.searchFileName.matchCaseAndWholeWord",
+                "title": "%extension.searchFileName.matchCaseAndWholeWord%"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
                     "command": "extension.searchFileName",
-                    "group": "navigation"
+                    "group": "4_search"
+                }, {
+                    "command": "extension.searchFileName.matchCase",
+                    "group": "4_search"
+                }, {
+                    "command": "extension.searchFileName.matchWholeWord",
+                    "group": "4_search"
+                }, {
+                    "command": "extension.searchFileName.matchCaseAndWholeWord",
+                    "group": "4_search"
                 }
             ]
         }
@@ -44,11 +65,13 @@
         "copy-paste": "^1.3.0"
     },
     "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.0",
-        "eslint": "^4.6.1",
-        "@types/node": "^7.0.0",
-        "@types/mocha": "^2.2.42"
-    }
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.34.0",
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+        "typescript": "^4.0.2",
+        "mocha": "^8.1.3",
+        "@types/mocha": "^8.0.3"
+	}
 }

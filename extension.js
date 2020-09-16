@@ -2,21 +2,28 @@ const vscode = require('vscode');
 const ncp = require("copy-paste");
 const path = require("path");
 
-function activate(context) {
-    let disposable = vscode.commands.registerCommand('extension.searchFileName', function (fileUri) {
+function addCommand(context, command, matchCase, matchWholeWord) {
+    let searchFileName = vscode.commands.registerCommand(command, function (fileUri) {
         if (fileUri != undefined) {
             var name = path.basename(fileUri.fsPath);
             ncp.copy(name, function() {
-                vscode.commands.executeCommand('workbench.action.findInFiles');
-                vscode.commands.executeCommand('workbench.action.search.toggleQueryDetails');
-                vscode.commands.executeCommand('workbench.action.search.toggleQueryDetails');
-                vscode.commands.executeCommand('editor.action.clipboardPasteAction');
-                vscode.commands.executeCommand('toggleSearchWholeWord');
-                vscode.commands.executeCommand('toggleSearchWholeWord');
+                vscode.commands.executeCommand('workbench.action.findInFiles', {
+                    query: name,
+                    triggerSearch: true,
+                    matchWholeWord: matchWholeWord,
+                    isCaseSensitive: matchCase,
+                });
             });
         }
     });
-    context.subscriptions.push(disposable); 
+    context.subscriptions.push(searchFileName);
+}
+
+function activate(context) {
+    addCommand(context, 'extension.searchFileName', false, false);
+    addCommand(context, 'extension.searchFileName.matchCase', true, false);
+    addCommand(context, 'extension.searchFileName.matchWholeWord', false, true);
+    addCommand(context, 'extension.searchFileName.matchCaseAndWholeWord', true, true);
 }
 exports.activate = activate;
 

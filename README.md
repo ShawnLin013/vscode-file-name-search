@@ -7,6 +7,12 @@
 
 Quickly search file name over all files.
 
+## Features
+1. Search File Name
+2. Search File Name (Match Case)
+3. Search File Name (Match Whole Word)
+4. Search File Name (Match Case and Whole Word)
+
 ## Usage
 
 1. Right click on the file

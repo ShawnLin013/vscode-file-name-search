@@ -1,0 +1,6 @@
+{
+	"extension.searchFileName": "搜尋檔案名稱",
+	"extension.searchFileName.matchCase": "搜尋檔案名稱 (大小寫須相符)",
+	"extension.searchFileName.matchWholeWord": "搜尋檔案名稱 (全字拼寫須相符)",
+	"extension.searchFileName.matchCaseAndWholeWord": "搜尋檔案名稱 (大小寫和全字拼寫皆須相符)"
+}
