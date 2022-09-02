@@ -1,5 +1,6 @@
 {
 	"extension.searchFileName": "Search File Name",
+	"extension.searchFileNameWithoutExtension": "Search File Name Without Extension",
 	"extension.searchFileName.matchCase": "Search File Name (Match Case)",
 	"extension.searchFileName.matchWholeWord": "Search File Name (Match Whole Word)",
 	"extension.searchFileName.matchCaseAndWholeWord": "Search File Name (Match Case and Whole Word)"
